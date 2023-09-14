@@ -12,7 +12,7 @@ function Controle({ rodando, botaoEsquerdoP, botaoDireitoP }){
             onPress={botaoDireitoP}
             >
                 <View style={styles.bordaBotao}>
-                    <Text style={{color: rodando ? '#fff' : '9d9ca2'}}>
+                    <Text style={{color: rodando ? '#fff' : '#9d9ca2'}}>
                         {rodando ? "Historico" : "Resetar"}
                     </Text>
                 </View>
@@ -22,11 +22,11 @@ function Controle({ rodando, botaoEsquerdoP, botaoDireitoP }){
             <TouchableOpacity
             style={[
                 styles.controleBotao,
-                {backgroundColor: rodando ? '340e0d' : '0a2a12'},
+                {backgroundColor: rodando ? '#340e0d' : '#0a2a12'},
             ]}
             onPress={botaoEsquerdoP}
             >
-                <View style={style.bordaBotao}>
+                <View style={styles.bordaBotao}>
                     <Text style={{color: rodando ? '#ea4c48' : '#37d05c'}}>
                         {rodando ? 'Parar' : 'Iniciar'}
                     </Text>
